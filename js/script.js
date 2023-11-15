@@ -57,7 +57,10 @@ createApp({
             stopAutoPlay: function(){
                 clearInterval(this.time);
             
-        }
+        },
+            startAutoPlay: function(){
+                this.time = setInterval(this.showNext, 2000)
+            }
     },
     
 }).mount("#app");
