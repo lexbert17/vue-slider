@@ -53,8 +53,11 @@ createApp({
         },
             showSlide: function(clickedIndex){
                 this.activeIndex = clickedIndex;
-            },
-        
+        },
+            stopAutoPlay: function(){
+                clearInterval(this.time);
+            
+        }
     },
     
 }).mount("#app");

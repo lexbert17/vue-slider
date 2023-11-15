@@ -15,7 +15,7 @@
     <div id="app">
 
         <div class="container" @keyup.up="showPrev" @keyup.down="showNext">
-            <div class="slider-wrapper" tabindex="0">
+            <div class="slider-wrapper" tabindex="0"  @mouseover="stopAutoPlay">
 
                 <div class="item">
                     <img :src="slides[activeIndex].image"  :alt="slides[activeIndex].title" >
